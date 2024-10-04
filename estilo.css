@@ -1,0 +1,36 @@
+{
+    margin: 0;
+    pading:0;
+}
+
+.conteudo {
+
+display: flex;
+justify-content:space-between ;
+}
+
+.cartao{
+background-color: darkgreen;
+color:black
+border-radius: 20xp;
+ height: 200xp;
+ width: 25rem;
+flex-grow:25rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
