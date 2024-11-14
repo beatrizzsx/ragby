@@ -1,45 +1,85 @@
-*{ margin: 0; padding: 0; }
- .conteudo{ 
-    display: flex;
-     justify-content: space-between; }
-     
-     .cartao{
-     background-color: aqua;
-    color: black;
-    border-radius: 20px;
-    height: 200px;
-    width: 25rem;
-    flex-grow: 1; 
-    flex-basis: calc(33% - 6rem);
-    margin: 1rem 1rem;
-    font-size: 28px;
-    *{ margin: 0; padding: 0; }
+*</html>*{
+   margin: 0;
+   padding: 0;
  
-                .conteudo{ 
-     display: flex;
-     justify-content: space-between;
-     } text-align: center; } 
-    
-     .cartao:hover .cartao--conteudo{
-     background-color: brown;
-     transform: rotateY(180deg); }
-     
-     .cartao--resposta{
-     font-size: 20px; } 
-                            
-     .cartao--conteudo{
-     border-radius: 20px;
-     background-color: aqua;
-    height: 100%;
-    transform-style: preserve-3d; 
-     transition: transform 300ms ease-in-out; } 
-                                    
-     .cartao--pergunta, .cartao--resposta{
-     backface-visibility: hidden; } 
-                                        
-     .cartao--resposta{
-     transform: rotateY(180deg); } footer{ background-color: b.v
 
+}
+
+#conteudo{
+   display: flex;
+   justify-content: space-between;
+}
+
+.cartao{
+   
+   color: black;
+   height: 20rem;
+   flex-grow: 1;
+   flex-basis: calc(33% - 6rem);
+   margin: 1rem 1rem;
+   font-size: 20px;
+   text-align: center;
+   padding: 10px;
+   
+}
+
+footer{
+
+   background-color: black;
+   color: white;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 25px;
+   font-size: 15px;
+   text-align: center;
+   padding-top: 2px;
+
+
+
+}
+
+.cartao:hover .cartao--conteudo{
+   background-color: #8A9BAD;
+   transform: rotateY(180deg);
+}
+
+.cartao--conteudo{
+
+   background-color: #99ABBF;
+   border-radius: 20px;
+   height: 100%;
+   transform-style: preserve-3d;
+   transition: transform 300ms ease-in-out;
+
+}
+
+.cartao--pergunta, .cartao--resposta{
+
+   backface-visibility: hidden;
+}
+
+.cartao--resposta{
+
+   transform: rotateY(180deg);
+}main jsfunction criarCartao(pergunta, resposta) {
+   let conteudo = document.getElementById("conteudo")
+   let cartao = document.createElement('article')
+   cartao.classList = 'cartao'
+
+   cartao.innerHTML = `
+   
+   <div class="cartao--conteudo">
+                   <div class="cartao--pergunta"><p>qual o tamanho da bola de rugby</p></div>
+                   <div class="cartao--resposta"><p>28 centímetros de longo, 77 centímetros de perímetro, 66 centímetros em sua circunferência e um peso de 400 gramas.</p></div>
+               </div>
+   
+   `
+
+   conteudo.appendChild(cartao)
+}
+
+criarCartao(1,2)
 
 
 
