@@ -6,9 +6,13 @@ function criarCartao(pergunta, resposta) {
     cartao.innerHTML = `
     
     <div class="cartao--conteudo">
-                    <div class="cartao--pergunta"><p>qual o tamanho da bola de rugby</p></div>
-                    <div class="cartao--resposta"><p>28 centímetros de longo, 77 centímetros de perímetro, 66 centímetros em sua circunferência e um peso de 400 gramas.</p></div>
-                </div>
+                    <div class="cartao--pergunta">
+                        <p>qual o tamanho da bola de rugby</p>
+                    </div>
+                    <div class="cartao--resposta">
+                        <p>28 centímetros de longo, 77 centímetros de perímetro, 66 centímetros em sua circunferência e um peso de 400 gramas.</p>
+                    </div>
+    </div>
     
     `
  
